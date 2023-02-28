@@ -1,0 +1,109 @@
+body {
+    background-color: blue;
+}
+
+h1 {
+    font-size: 100px;
+    position: absolute;
+    left: 686px;
+    top: 60px;
+    color: olive;
+    animation-name: wooo, weee;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    z-index: 2;
+}
+
+.nophone {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    z-index: 1;
+
+    visibility: visible;
+}
+
+.iphone {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    z-index: 1;
+
+    visibility: hidden;
+}
+
+.pap {
+    visibility: hidden;
+    position: absolute;
+    left: 30vw;
+    top: 20vh;
+    z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: black;
+    }
+
+    h1 {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        color: red;
+        animation-name: waaa, wiii;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    .nophone {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        color: white;
+
+        visibility: hidden;
+    }
+
+    .iphone {
+        position: absolute;
+        left: 15%;
+        top: 50%;
+        color: white;
+        font-size: 50px;
+
+        visibility: visible;
+    }
+
+    .pap 
+    {
+        visibility: visible;
+    }
+
+
+}
+
+@keyframes wooo {
+    0%   {left:5%; top:0%;}
+    25%  {left:90%; top:0%;}
+    50%  {left:90%; top:70%;}
+    75%  {left:5%; top:70%;}
+    100% {left:5%; top:0%;}
+}
+
+@keyframes weee {
+    50% {transform: rotate(360deg);}
+}
+
+@keyframes waaa {
+    0%   {left:60%; top:70%;}
+    25%  {left:5%; top:0%;}
+    50%  {left:60%; top:0%;}
+    75%  {left:5%; top:70%;}
+    100% {left:60%; top:70%;}
+}
+
+@keyframes wiii {
+    50% {transform: rotate(360000000000deg);}
+}
