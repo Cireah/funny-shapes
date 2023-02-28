@@ -26,20 +26,30 @@ h1 {
 
 .iphone {
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 15%;
+    top: 50%;
     color: white;
     z-index: 1;
 
     visibility: hidden;
 }
 
+.yippee {
+    position: absolute;
+    left: 40vw;
+    top: 30vh;
+    z-index: 1;
+
+    visibility: visible;
+}
+
 .pap {
-    visibility: hidden;
     position: absolute;
     left: 30vw;
     top: 20vh;
     z-index: 1;
+
+    visibility: hidden;
 }
 
 @media screen and (max-width: 600px) {
@@ -76,8 +86,11 @@ h1 {
         visibility: visible;
     }
 
-    .pap 
-    {
+    .yippee {
+        visibility: hidden;
+    }
+
+    .pap {
         visibility: visible;
     }
 
